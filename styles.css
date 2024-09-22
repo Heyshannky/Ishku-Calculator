@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ffcccc, #ffe6e6); /* Romantic background */
+  }
+  
+  .background {
+    position: relative;
+  }
+  
+  .gif_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .gif {
+    position: absolute;
+    width: 100px;
+    height: auto;
+  }
+  
+  #top-left {
+    top: -100px;
+    left: -100px;
+    margin: -200px;
+    padding-top: 400px;
+    width: 200px;
+  }
+  
+  #top-right {
+    top: -120px;
+    right: -100px;
+    padding-top: 400px;
+    width: 200px;
+    margin: -200px;
+  }
+  
+  #bottom-left {
+    bottom: -120px;
+    left: -100px;
+    margin-left: 230px;
+    margin-top: 40%;
+    width: 100px;
+  }
+  
+  #bottom-right {
+    top: -120px;
+    right: -80px;
+    margin-right: 200px;
+  }
+  
+  .calculator {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .display {
+    background: #ffe1e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #ff6f61;
+    min-height: 50px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .buttons button:hover {
+    background: #ff4f47;
+  }
+  
+  .compliment {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff4f47;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Additional styling for a more romantic and visually appealing look */
+  .gif_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Subtle overlay */
+    backdrop-filter: blur(5px); /* Add a soft blur effect */
+  }
+  
+  .calculator {
+    box-shadow: 0 5px 20px rgba(255, 100, 100, 0.2);
+    border: 2px solid #ff6f61;
+  }
+  
+  .buttons button {
+    font-family: 'Cursive', cursive; /* Use a cursive font for a more romantic feel */
+  }
+  
+  .compliment {
+    font-family: 'Cursive', cursive; /* Use a cursive font for a more romantic feel */
+  }
+  .gif {
+    filter: sepia(0.5); /* Adjust the sepia value as needed */
+  }
